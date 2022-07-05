@@ -1,17 +1,17 @@
-<div id="<%= dom_id post %>">
+<div id="<%= dom_id post %>" class="post">
   <p>
     <strong>Title:</strong>
-    <%= post.title %>
+    <span class="title"><%= post.title %></span>
   </p>
 
   <p>
     <strong>Content:</strong>
-    <%= post.content %>
+    <span class="content"><%= post.content %></span>
   </p>
 
   <p>
     <strong>Visibility:</strong>
-    <%= post.visibility %>
+    <span><%= post.visibility %></span>
   </p>
 
 </div>

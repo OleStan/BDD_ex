@@ -50,4 +50,3 @@ Then(/^Nobody can see the post$/) do
   @post = find_post_by_title(@title)
   !@post.visibility && no_post_on_page(@post.id)
 end
-

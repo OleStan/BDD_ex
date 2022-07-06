@@ -1,9 +1,15 @@
 require 'rails_helper'
 require 'capybara/rails'
+include AuthHelper
 
 
 RSpec.describe Post, type: :model do
   describe 'The post creation', type: :feature do
+
+    before :each do
+      register_user
+    end
+
     before :each do
       create :post, :visible
     end
